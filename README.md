@@ -13,10 +13,38 @@ Crear Producto
 ![SCHEMA](images/1.png)
 SOLUCIÓN
 1. El proyecto debe ser desarrollado en Sprint Boot 
-![SCHEMA](images/2.png)
+![1](images/2.png)
 2. Exponer endpoint para agregar una nueva franquicia
-![SCHEMA](images/3.png)
-![SCHEMA](images/4.png)
+![2](images/3.png)
+![3](images/4.png)
 3. Exponer endpoint para agregar una nueva sucursal a la franquicia
-![SCHEMA](images/5.png)
-![SCHEMA](images/6.png)
+![4](images/5.png)
+![5](images/6.png)
+4. Exponer endpoint para agregar un nuevo producto a la sucursal
+![6](images/7.png)
+![6](images/8.png)
+5. Exponer endpoint para eliminar un nuevo producto a una sucursal
+![6](images/9.png)
+6. Exponer endpoint para modificar un Stock de un nuevo producto
+![RI9](images/10.png)
+![RI9](images/11.png)
+7. Exponer endpoint para agregar que permita mostrar cual es el producto que más stock 
+tiene por sucursal para una 
+franquicia puntual. Debe retomar un listado de productos que indiquen a que sucursal 
+pertenece.
+![RI9](images/12.png)
+8. Utilizar sistemas de persistencia de datos como Redis, MySql, Mongo BD, Dynamo en 
+algún proveedor de nube. (mysql)
+![RI9](images/13.png)
++Plus si se expone endpoint que permita actualizar el nombre de la franquicia.
+![RI9](images/14.png)
+![RI9](images/15.png)
++Plus si se expone endpoint que permita actualizar el nombre de la sucursal.
+![RI9](images/16.png)
+![RI9](images/17.png)
++Plus si se expone endpoint que permita actualizar el nombre del producto.
+![RI9](images/18.png)
+![RI9](images/19.png)
++ELIMINAR FRANQUICIA
+![RI9](images/20.png)
+![RI9](images/21.png)
