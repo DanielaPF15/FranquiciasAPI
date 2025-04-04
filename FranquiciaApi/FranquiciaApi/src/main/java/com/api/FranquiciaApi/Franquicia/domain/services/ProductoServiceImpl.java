@@ -72,7 +72,7 @@ public class ProductoServiceImpl implements ProductoService{
         SucursalEntity sucursal = sucursalRepository.findById(sucursalId)
                 .orElseThrow(() -> new IllegalArgumentException("La sucursal no existe."));
 
-        if (!sucursal.getFranquicia().equals(franquiciaId)) {
+        if (!sucursal.getFranquicia().getId().equals(franquiciaId)) {
             throw new IllegalArgumentException("La sucursal no pertenece a la franquicia proporcionada.");
         }
 
