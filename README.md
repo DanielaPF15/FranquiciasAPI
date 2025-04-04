@@ -45,13 +45,17 @@ algún proveedor de nube. (mysql)
 11. +Plus si se expone endpoint que permita actualizar el nombre del producto.
 ![RI9](images/18.png)
 ![RI9](images/19.png)
-12. +ELIMINAR FRANQUICIA
+12. +ELIMINAR FRANQUICIA.
 ![RI9](images/20.png)
-12. +CONSULTAR FRANQUICIA
+12. +CONSULTAR FRANQUICIA.
 ![RI9](images/21.png)
 
 PARA PROBAR:
+
+
 CLONAR PROYECTO,CREAR BD,AJUSTAR application.properties con puerto y usuario
+
+SQL.
 create database franquiciasapi;
 use franquiciasapi;
 SELECT*FROM FRANQUICIA;
