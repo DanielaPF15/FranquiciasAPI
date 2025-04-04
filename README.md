@@ -36,15 +36,24 @@ pertenece.
 8. Utilizar sistemas de persistencia de datos como Redis, MySql, Mongo BD, Dynamo en 
 algún proveedor de nube. (mysql)
 ![RI9](images/13.png)
-+Plus si se expone endpoint que permita actualizar el nombre de la franquicia.
+9. +Plus si se expone endpoint que permita actualizar el nombre de la franquicia.
 ![RI9](images/14.png)
 ![RI9](images/15.png)
-+Plus si se expone endpoint que permita actualizar el nombre de la sucursal.
+10. +Plus si se expone endpoint que permita actualizar el nombre de la sucursal.
 ![RI9](images/16.png)
 ![RI9](images/17.png)
-+Plus si se expone endpoint que permita actualizar el nombre del producto.
+11. +Plus si se expone endpoint que permita actualizar el nombre del producto.
 ![RI9](images/18.png)
 ![RI9](images/19.png)
-+ELIMINAR FRANQUICIA
+12. +ELIMINAR FRANQUICIA
 ![RI9](images/20.png)
+12. +CONSULTAR FRANQUICIA
 ![RI9](images/21.png)
+
+PARA PROBAR:
+CLONAR PROYECTO,CREAR BD,AJUSTAR application.properties con puerto y usuario
+create database franquiciasapi;
+use franquiciasapi;
+SELECT*FROM FRANQUICIA;
+SELECT*FROM SUCURSAL;
+SELECT*FROM PRODUCTO
