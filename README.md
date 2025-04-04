@@ -10,4 +10,4 @@ Eliminar una franquicia por su ID.
 
 SOLUCIÓN
 1. Modelo de datos:
-![Base de datos 1](images/BaseDatos.png)
+![Base de datos 1](images/1.png)
