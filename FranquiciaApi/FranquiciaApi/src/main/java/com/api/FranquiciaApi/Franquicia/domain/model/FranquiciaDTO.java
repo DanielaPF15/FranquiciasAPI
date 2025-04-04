@@ -7,8 +7,9 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class SucursalDTO {
-    private Long id;
+public class FranquiciaDTO {
+
+    private Integer id;
     private String nombre;
-    private Long franquiciaId;
+
 }

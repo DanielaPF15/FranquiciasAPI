@@ -5,26 +5,26 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.antlr.v4.runtime.misc.NotNull;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Entity
-@Table(name = "sucursal")
+@Table(name = "franquicia")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class SucursalEntity {
+public class FranquiciaEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
+
+    @NotNull
+    @Column(name = "nombre")
     private String nombre;
 
-    @ManyToOne
-    @JoinColumn(name = "franquicia_id")
-    private FranquiciaEntity franquicia;
-
-    @OneToMany(mappedBy = "sucursal", cascade = CascadeType.ALL)
-    private List<ProductoEntity> productos;
-
+    @OneToMany(mappedBy = "franquicia", cascade = CascadeType.ALL)
+    private List<SucursalEntity> sucursales;
 }
