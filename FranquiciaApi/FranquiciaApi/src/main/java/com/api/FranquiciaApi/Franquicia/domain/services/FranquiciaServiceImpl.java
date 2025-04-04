@@ -2,7 +2,6 @@ package com.api.FranquiciaApi.Franquicia.domain.services;
 
 import com.api.FranquiciaApi.Franquicia.domain.gateway.FranquiciaGateway;
 import com.api.FranquiciaApi.Franquicia.domain.model.FranquiciaDTO;
-import com.api.FranquiciaApi.Franquicia.infraestructure.drivenadapter.mysql.mapper.FranquiciaMapper;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -25,7 +24,6 @@ public class FranquiciaServiceImpl implements FranquiciaService {
     private static final String ID_KEY = "Id";
 
     private FranquiciaGateway franquiciaGateway;
-    private FranquiciaMapper mapper;
 
     @Override
     public ResponseEntity<Map<String, Object>> crearFranquicia(FranquiciaDTO franquiciaDTO) {

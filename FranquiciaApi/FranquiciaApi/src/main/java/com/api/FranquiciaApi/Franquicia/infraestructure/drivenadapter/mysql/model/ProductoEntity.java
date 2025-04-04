@@ -15,9 +15,9 @@ import lombok.Setter;
 public class ProductoEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
     private String nombre;
-    private int stock;
+    private Integer stock;
 
     @ManyToOne
     @JoinColumn(name = "sucursal_id")

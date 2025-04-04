@@ -8,8 +8,8 @@ import org.mapstruct.factory.Mappers;
 
 @Mapper(componentModel = "spring")
 public interface SucursalMapper {
-    SucursalMapper INSTANCE = Mappers.getMapper(SucursalMapper.class);
-
+    @Mapping(source = "franquicia.id", target = "franquiciaId")
     SucursalDTO toModel(SucursalEntity sucursal);
+    @Mapping(source = "franquiciaId", target = "franquicia.id")
     SucursalEntity toEntity(SucursalDTO dto);
 }
